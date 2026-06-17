@@ -3,26 +3,20 @@ deployment.apps/guestbook with revision #2
 Pod Template:
 Labels:  app=guestbook
 pod-template-hash=5dc596455c
-Containers: guestbook:
+Containers:
+guestbook:
 Image:  us.icr.io/sn-labs-paulolinan/guestbook:v2
 Port:  3000/TCP
 Host Port: 0/TCP
 Limits:
-сри:
-memory:
-5m
-128M1
+срu:  5m
+memory:  128Mi
 Requests:
-сри:
-memory:
-2m
-64Mi
+срu:  2m
+memory:  64Mi
 Environment:
-REDIS_MASTER_SERVICE_HOST:
-REDIS_MASTER_SERVICE_PORT:
-redis-master
-6379
-SPRING_PROFILES_ACTIVE:
-prod
+REDIS_MASTER_SERVICE_HOST:  redis-master
+REDIS_MASTER_SERVICE_PORT:  6379
+SPRING_PROFILES_ACTIVE:  prod
 Mounts:  <none>
 Volumes:  <none>
