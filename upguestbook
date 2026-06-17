@@ -1,0 +1,49 @@
+docker build . -t us.icr.i o/$MY_NAMESPACE/guestbook:v2 && docker push us.icr.io/$MY_NAMESPACE/guestbook:v2
+I+] Building 0.9s (14/14) FINISHED
+= [internall load build definition from Dockerfile
+=> = transferring dockerfile: 475B
+= [internal] load metadata for docker.io/library/node:20-alpine => linternal] load .dockerignore = => transferring context: 186B
+= dependencies 1/41 FROM docker.io/library/node:20-alpine@sha256:effc1ee6b93c4db0aab570.0s
+=> [internall load build context
+= = transferring context: 46.34kB
+= CACHED Idependencies 2/4] WORKDIR /app
+= CACHED [dependencies 3/41 COPY package*-json ./ = CACHED [dependencies 4/4] RUN npm ci --omit=dev
+= CACHED [stage-1 3/7] COPY --from=dependencies /app/node_modules •/node_modules
+= CACHED Istage-1 4/7| COPY package*.json ./ = CACHED [stage-1 5/7] COPY server.js ./
+[stage-1
+6/7] CoPY public -/public/
+RUN addgroup -g 1001 -S nodejs did
+adduser -S nodeuser -u 1001 &&
+=> exporting to image = => exporting layers
+= = writing image sha256:472a31dcb61d124af4462b49a5b24378d21d6314c8dbc4a1675b976477cal 0.0s
+= = naming to us.icr.io/sn-labs-paulolinan/guestbook:v2
+docker: default
+0.0s
+0.0s
+0.3s
+0.0s
+0.0s
+0.0s
+0.0s
+0.0s
+0.0s
+0.0s
+0.0s
+0.0s
+0.0s
+0.0s
+0.4s
+0.1s
+0.0s
+0.0s
+The push refers to repository [us.icr.io/sn-labs-paulolinan/guestbook]
+58cb5dcec545: Pushed
+b6683eaece07: Pushed
+0600d220c7f7: Layer already exists clac2d7edcce: Layer already exists
+671acd5d7ddf: Layer already exists
+1e5107e8de89: Layer already exists
+9fd30ff9d315: Layer already exists
+875b8fb676b2: Layer already exists
+8c0baбa3f014: Layer already exists
+3e01818d79cd: Layer already exists
+v2: digest: sha256:6ab61a908d14e8fe49175745f2c7d4d601c28b21c43d13fcbf53c84b8b3e435d size: 2407
