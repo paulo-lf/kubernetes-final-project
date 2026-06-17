@@ -9,14 +9,14 @@ Image:  us.icr.io/sn-labs-paulolinan/guestbook:v2
 Port:  3000/TCP
 Host Port: 0/TCP
 Limits:
-срu:  5m
-memory:  128Mi
+  срu:  5m
+  memory:  128Mi
 Requests:
-срu:  2m
-memory:  64Mi
+  срu:  2m
+  memory:  64Mi
 Environment:
-REDIS_MASTER_SERVICE_HOST:  redis-master
-REDIS_MASTER_SERVICE_PORT:  6379
-SPRING_PROFILES_ACTIVE:  prod
-Mounts:  <none>
-Volumes:  <none>
+  REDIS_MASTER_SERVICE_HOST:  redis-master
+  REDIS_MASTER_SERVICE_PORT:  6379
+  SPRING_PROFILES_ACTIVE:  prod
+    Mounts:  <none>
+  Volumes:  <none>
