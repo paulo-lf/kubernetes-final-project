@@ -1,22 +1,23 @@
-kubectl rollout history deployments guestbook --revision=2
+kubectl rollout history deployment/guestbook --revision=2
+
 deployment.apps/guestbook with revision #2
 Pod Template:
-Labels:  app=guestbook
-pod-template-hash=5dc596455c
-Containers:
-guestbook:
-Image:  us.icr.io/sn-labs-paulolinan/guestbook:v2
-Port:  3000/TCP
-Host Port: 0/TCP
-Limits:
-  срu:  5m
-  memory:  128Mi
-Requests:
-  срu:  2m
-  memory:  64Mi
-Environment:
-  REDIS_MASTER_SERVICE_HOST:  redis-master
-  REDIS_MASTER_SERVICE_PORT:  6379
-  SPRING_PROFILES_ACTIVE:  prod
-    Mounts:  <none>
-  Volumes:  <none>
+  Labels:       app=guestbook
+                pod-template-hash=5dc596455c
+  Containers:
+   guestbook:
+    Image:      us.icr.io/sn-labs-paulolinan/guestbook:v2
+    Port:       3000/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:      5m
+      memory:   128Mi
+    Requests:
+      cpu:      2m
+      memory:   64Mi
+    Environment:
+      REDIS_MASTER_SERVICE_HOST:  redis-master
+      REDIS_MASTER_SERVICE_PORT:  6379
+      SPRING_PROFILES_ACTIVE:      prod
+    Mounts:                       <none>
+  Volumes:                        <none>
