@@ -1,0 +1,30 @@
+docker push us. icr.io/$MY_NAMESPACE/guestbook: v1
+The push refers to repository [us.icr.io/sn-labs-paulolinan/guestbook]
+1fdffc341bef: Pushed
+63fee31c3434: Pushed
+0600d220c7f7: Pushed
+clac2d7edcce: Pushed
+671acd5d7ddf: Pushed
+le5107e8de89: Pushed
+9fd30ff9d315: Pushed
+875b8fb676b2: Pushed
+8cøbaбa3f014: Pushed
+3e01818d79cd: Pushed
+v1: digest: sha256:b91bab679e2774c83ed357a97cd606386fa78959a36043430afa05e4bb581
+701 size: 2407
+
+ibmcloud cr images
+Listing images...
+Repository
+Namespace
+Created
+us.icr.io/sn-labs-paulolinan/guestbook
+e27
+sn-labs-paulolinan 2 minutes ago
+Size
+48 MB
+Security status
+-
+Tag
+Digest v1
+b91bab679
